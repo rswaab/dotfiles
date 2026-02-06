@@ -6,6 +6,11 @@ DOTFILES="$(cd "$(dirname "$0")" && pwd)"
 echo "Installing dotfiles from $DOTFILES"
 echo ""
 
+echo "--- Dev directory structure ---"
+mkdir -p "$HOME/Dev/"{projects,lab,scratch}
+echo "  Ensured ~/Dev/{projects,lab,scratch} exist"
+echo ""
+
 # Helper: create symlink, backing up any existing file
 link() {
   local src="$1"
