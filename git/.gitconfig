@@ -1,0 +1,12 @@
+[user]
+	name = Rob
+	email = rswaab23@gmail.com
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+[core]
+	editor = cursor --wait
