@@ -54,6 +54,9 @@ link "$DOTFILES/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.jso
 echo "--- GitHub CLI ---"
 link "$DOTFILES/gh/config.yml"    "$HOME/.config/gh/config.yml"
 
+echo "--- Claude Code ---"
+link "$DOTFILES/claude/CLAUDE.md"  "$HOME/.claude/CLAUDE.md"
+
 echo ""
 echo "Done! All dotfiles are symlinked."
 echo ""
