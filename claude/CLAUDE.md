@@ -6,7 +6,7 @@ Rob Swaab. Melbourne, mid-50s. ADHD (diagnosed). Partner: Maria. Two adult child
 Systems thinker and futurist. Not a career developer — building dev capability for larger projects.
 Vision-led, not routine-led. Will not maintain daily routines. Responds to meaning, not discipline.
 No emojis. Direct, warm, real. Challenge prescriptive instructions — redirect to intent.
-Full context: `~/Dev/projects/sora/system/` and `~/Dev/projects/sora/personal-context/`
+Full context: `~/Dev/projects/sora/system/`, `~/Dev/projects/sora/personal-context/`, and `~/Dev/projects/sora/scopes/`
 
 ## Sora Participation Contract
 
@@ -14,8 +14,8 @@ Sora is Rob's personal system — the orchestrator for all work sessions.
 
 **Every session, every project, at start:**
 1. Read today's daily plan at `~/Dev/projects/sora/core-loop/days/YYYY-MM-DD.md` (if it exists)
-2. Know where your project fits in today's plan. Do the work. Check off completed tasks.
-3. At natural transitions, notice and capture: energy shifts, state changes, new information about Rob. Log observations in `~/Dev/projects/sora/evidence/observations.md`.
+2. Know where your project fits in today's plan and in the scope tree (`~/Dev/projects/sora/scopes/index.md`). Do the work. Check off completed tasks.
+3. At natural transitions, notice and capture: energy shifts, state changes, new information about Rob. Log AI observations in `~/Dev/projects/sora/evidence/observations.md`. (Note: observations are things the AI notices about Rob — NOT user-generated content. Brain dumps from VOILA go to `~/Dev/projects/sora/evidence/staging.md` for collaborative triage.)
 
 When starting from `~/Dev/projects/sora/`, follow Sora's own CLAUDE.md for full routing.
 
@@ -33,14 +33,17 @@ When starting from `~/Dev/projects/sora/`, follow Sora's own CLAUDE.md for full 
 
 All projects: `~/Dev/projects/`. Each managed project has a CLAUDE.md.
 
-| Project | What | Category |
-|---------|------|----------|
-| **sora/** | Personal system (context, evidence, daily planning) | Core |
-| **ILA/** | Intentional Life Architecture (canonical spec) | Core |
-| **TIP/** | The Intentional Life Project (public expression, content) | Core |
-| **gaao/** | General Adaptive Agent Ontology (formal ontology) | Structural |
-| **Studyclix/** | Education platform (current income, bridge) | Income |
-| **life-portrait/** | Conversational onboarding product (TIP asset) | Derivative |
+The full scope tree (domains, areas, streams, projects) with context pointers lives at `~/Dev/projects/sora/scopes/index.md`. The table below is a quick reference — the scope index is the authoritative routing source.
+
+| Project | What | Scope Path |
+|---------|------|------------|
+| **sora/** | Personal system (context, evidence, daily planning) | Professional → Craft → Sora |
+| **ILA/** | Intentional Life Architecture (canonical spec) | Professional → Craft → ILA |
+| **TIP/** | The Intentional Life Project (public expression, content) | Professional → Craft → TIP |
+| **gaao/** | General Adaptive Agent Ontology (formal ontology) | Professional → Craft → GAAO |
+| **Studyclix/** | Education platform (current income, bridge) | Professional → Income → Studyclix |
+| **life-portrait/** | Conversational onboarding product (TIP asset) | Professional → Craft → TIP → Life Portrait |
+| **voila/** | Voice of ILA — Telegram bot delivering Sora | Professional → Craft → ILA → VOILA |
 
 Archived: `personal-context/` (subsumed into sora/). Leave alone: playground/, aa_tsb_test_a/b/, ShopAT/.
 
