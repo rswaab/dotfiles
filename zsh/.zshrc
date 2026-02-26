@@ -14,3 +14,5 @@ alias mini-voila='ssh $MINI "/Users/swaabi/.npm-global/bin/pm2 restart voila"'
 
 # --- Tools ---
 eval "$(direnv hook zsh)"
+
+. "$HOME/.local/bin/env"
