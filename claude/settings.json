@@ -1,0 +1,109 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+      "Task",
+      "Bash(git *)",
+      "Bash(gh *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Bash(pnpm *)",
+      "Bash(node *)",
+      "Bash(python3 *)",
+      "Bash(pip3 *)",
+      "Bash(pm2 *)",
+      "Bash(ls *)",
+      "Bash(wc *)",
+      "Bash(pwd)",
+      "Bash(which *)",
+      "Bash(find *)",
+      "Bash(ps *)",
+      "Bash(pgrep *)",
+      "Bash(date *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(touch *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(sort *)",
+      "Bash(tmux *)",
+      "Bash(curl *)",
+      "Bash(ssh *)",
+      "Bash(ssh-add *)",
+      "Bash(ssh-keygen *)",
+      "Bash(source *)",
+      "Bash(pandoc *)",
+      "Bash(textutil *)",
+      "Bash(defaults read *)",
+      "Bash(scutil *)",
+      "Bash(launchctl list *)",
+      "Bash(tailscale status *)",
+      "Bash(timeout *)",
+      "Bash(* --version)",
+      "Bash(* --help)",
+      "Bash(*)",
+      "mcp__tana-local__*",
+      "mcp__ms365__*",
+      "mcp__google-workspace__*"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(dd *)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/sora-preflight.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/log-reads.sh"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/sora-session-end.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true,
+    "supabase@claude-plugins-official": true
+  },
+  "effortLevel": "high"
+}
