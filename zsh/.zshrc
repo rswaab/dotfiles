@@ -5,6 +5,7 @@ export PATH="$HOME/.npm-global/bin:$PATH"
 
 # --- Aliases ---
 alias python=python3
+alias ila='cd ~/Dev/projects/ila-app'
 
 # --- Mac Mini Remote ---
 MINI="swaabi@100.80.153.36"
@@ -16,3 +17,7 @@ alias mini-voila='ssh $MINI "/Users/swaabi/.npm-global/bin/pm2 restart voila"'
 eval "$(direnv hook zsh)"
 
 . "$HOME/.local/bin/env"
+
+# Substrate
+export SUBSTRATE_ENGINE_PATH="/Users/swaabi/.substrate/engine"
+export SUBSTRATE_PATH="/Users/swaabi/Dev/sandbox/substrate"
