@@ -16,7 +16,7 @@ alias mini-voila='ssh $MINI "/Users/swaabi/.npm-global/bin/pm2 restart voila"'
 # --- Tools ---
 eval "$(direnv hook zsh)"
 
-. "$HOME/.local/bin/env"
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
 # Substrate
 export SUBSTRATE_ENGINE_PATH="/Users/swaabi/.substrate/engine"
